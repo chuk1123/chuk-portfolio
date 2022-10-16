@@ -41,7 +41,7 @@ export default {
         },
         {
           title: 'About',
-          to: '/inspire'
+          to: '/about'
         }
       ],
       title: 'Chuk'
