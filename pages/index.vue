@@ -1,6 +1,6 @@
 <template>
 <div>
-  <v-container class="py-10 mb-6" color="grey">
+  <v-container class="py-10 mb-6">
     <v-row class="align-center justify-center">
       <v-col cols=6>
         <div class="text-h5 secondary--text mb-6">Hello, my name is </div>
@@ -44,8 +44,8 @@
           <v-card-subtitle>
             {{item.subtitle}}
           </v-card-subtitle>
-            <v-row>
-              <v-col v-for="image in item.image" :key=image.id>
+            <v-row align="center" no-gutters>
+              <v-col v-for="image in item.image" :key=image.id >
                 <v-img :src="image" class="my-2 mx-auto rounded-xl" max-height="400" max-width="300"/>            
               </v-col>
             </v-row>
@@ -73,7 +73,7 @@ export default {
         },
         {
           title: "Snake AI",
-          subtitle: "AI to Play Snake Using Reinforcement Learning",
+          subtitle: "AI to Play Snake Using Deep Reinforcement Learning",
           image: [
             "https://media.istockphoto.com/vectors/classic-retro-snakestyle-game-basic-digital-screen-for-your-design-vector-id1363586427?k=20&m=1363586427&s=612x612&w=0&h=uKW6cbMQCS4ydTzsdIaRiUc1L7Ike-3N0qzBjm-uwis=",
             "https://cdn-icons-png.flaticon.com/512/6461/6461928.png"

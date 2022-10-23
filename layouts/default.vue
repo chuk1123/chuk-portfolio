@@ -3,10 +3,10 @@
     background: linear-gradient(to bottom, white, white, #B39DDB);
   ">
     <v-app-bar
-      app
+      app height="80"
     >
     <v-container class="fill-height">
-      <h2 class="font-weight-bold deep-purple--text">Kevin Chu</h2>
+      <nuxt-link to="/" class="font-weight-bold text-h4 deep-purple--text text-decoration-none" align="center">Chuk</nuxt-link>
       <v-spacer />
       <div v-for="item in items" :key="item.id">
         <v-btn text :to="item.to" class="mx-1">
@@ -16,7 +16,7 @@
     </v-container>
     </v-app-bar>
     <v-main>
-      <v-container>
+      <v-container style="max-width: 1200px;">
         <Nuxt />
       </v-container>
     </v-main>
@@ -24,7 +24,9 @@
       :absolute="!fixed"
       app
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <span class="ml-6">&copy; {{ new Date().getFullYear() }} Chuk</span>
+      <v-spacer></v-spacer>
+      <span class="mr-6"></span>
     </v-footer>
   </v-app>
 </template>
