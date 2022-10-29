@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="my-md-8 my-4">
   <v-container class="py-10 mb-6">
     <v-row class="align-center justify-center">
       <v-col cols=6>
