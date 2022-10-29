@@ -1,34 +1,36 @@
 <template>
-<div class="my-md-8 my-4">
+<div>
   <v-container class="py-10 mb-6">
     <v-row class="align-center justify-center">
-      <v-col cols=6>
+      <v-col cols=12 md=6>
         <div class="text-h5 secondary--text mb-6">Hello, my name is </div>
         <div class="display-3 mb-6"><span class="deep-purple--text">Kevin Chu.</span></div>
         <div class="text-h5 mb-6">Code in Python, C++</div>
         <div class="text-h6 mb-6">Machine Learning, Web Development, Discord Bots</div>
         <br>
-        <div>
-          <v-btn large class="px-3 me-2 white--text" color="red" href="https://www.youtube.com/channel/UCwPzHYyJy85mEExyrVLF2Hw" target="_blank">
-              <v-icon left size="16">mdi-youtube</v-icon>
-              Youtube
-          </v-btn>
-          <v-btn large class="px-3 ma-2 white--text" color="pink" href="https://www.instagram.com/chuk1123/" target="_blank">
-              <v-icon left size="16">mdi-instagram</v-icon>
-              Instagram
-          </v-btn>
-          <v-btn large class="px-3 ma-2" color="info">
-              <v-icon left size="16">mdi-linkedin</v-icon>
-              Linkedin
-          </v-btn>
-          <v-btn large class="px-3 ma-2" color="dark" href="https://github.com/chuk1123" target="_blank">
-              <v-icon left size="16">mdi-github</v-icon>
-              Github
-          </v-btn>
-        </div>
+        <v-row class="justify-center">
+          <v-col cols=12>
+            <v-btn large class="px-3 ma-2 white--text" color="red" href="https://www.youtube.com/channel/UCwPzHYyJy85mEExyrVLF2Hw" target="_blank">
+                <v-icon left size="16">mdi-youtube</v-icon>
+                Youtube
+            </v-btn>
+            <v-btn large class="px-3 ma-2 white--text" color="pink" href="https://www.instagram.com/chuk1123/" target="_blank">
+                <v-icon left size="16">mdi-instagram</v-icon>
+                Instagram
+            </v-btn>
+            <v-btn large class="px-3 ma-2" color="info" href="www.linkedin.com/in/kevin-chu-072b7a211" target="_blank">
+                <v-icon left size="16">mdi-linkedin</v-icon>
+                Linkedin
+            </v-btn>
+            <v-btn large class="px-3 ma-2" color="dark" href="https://github.com/chuk1123" target="_blank">
+                <v-icon left size="16">mdi-github</v-icon>
+                Github
+            </v-btn>
+          </v-col>
+        </v-row>
       </v-col>
-      <v-col cols=4>
-        <v-img class="rounded-xl elevation-4 mx-auto" src="kevin2.jpg"/>
+      <v-col cols=12 md=4>
+        <v-img class="rounded-xl elevation-4 mx-auto" max-height="400" max-width="400" src="kevin2.jpg"/>
       </v-col>
     </v-row>
   </v-container>
@@ -36,8 +38,8 @@
   <v-container class="py-10">
     <div class="text-h3 deep-purple--text text-center font-weight-bold mb-10">Projects</div>
     <v-row class="my-10" justify="center">
-      <v-col v-for="item in projects" :key="item.id" cols=6>
-        <v-card class="pa-6 rounded-xl">
+      <v-col v-for="item in projects" :key="item.id" cols=12 md=6>
+        <v-card class="pa-6 rounded-xl" max-height="750">
           <v-card-title>
             {{item.title}}
           </v-card-title>
