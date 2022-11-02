@@ -16,7 +16,7 @@
             <v-icon left size="16">mdi-instagram</v-icon>
             Instagram
         </v-btn>
-        <v-btn large class="px-3 ma-2" color="info" href="www.linkedin.com/in/kevin-chu-072b7a211" target="_blank">
+        <v-btn large class="px-3 ma-2" color="info" href="https://www.linkedin.com/in/kevin-chu-072b7a211/" target="_blank">
             <v-icon left size="16">mdi-linkedin</v-icon>
             Linkedin
         </v-btn>
