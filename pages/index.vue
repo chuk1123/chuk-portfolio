@@ -8,27 +8,23 @@
         <div class="text-h5 mb-6">Code in Python, C++</div>
         <div class="text-h6 mb-6">Machine Learning, Web Development, Discord Bots</div>
         <br>
-        <v-row class="justify-center">
-          <v-col cols=12>
-            <v-btn large class="px-3 ma-2 white--text" color="red" href="https://www.youtube.com/channel/UCwPzHYyJy85mEExyrVLF2Hw" target="_blank">
-                <v-icon left size="16">mdi-youtube</v-icon>
-                Youtube
-            </v-btn>
-            <v-btn large class="px-3 ma-2 white--text" color="pink" href="https://www.instagram.com/chuk1123/" target="_blank">
-                <v-icon left size="16">mdi-instagram</v-icon>
-                Instagram
-            </v-btn>
-            <v-btn large class="px-3 ma-2" color="info" href="www.linkedin.com/in/kevin-chu-072b7a211" target="_blank">
-                <v-icon left size="16">mdi-linkedin</v-icon>
-                Linkedin
-            </v-btn>
-            <v-btn large class="px-3 ma-2" color="dark" href="https://github.com/chuk1123" target="_blank">
-                <v-icon left size="16">mdi-github</v-icon>
-                Github
-            </v-btn>
-          </v-col>
-        </v-row>
-      </v-col>
+        <v-btn large class="px-3 ma-2 white--text" color="red" href="https://www.youtube.com/channel/UCwPzHYyJy85mEExyrVLF2Hw" target="_blank">
+            <v-icon left size="16">mdi-youtube</v-icon>
+            Youtube
+        </v-btn>
+        <v-btn large class="px-3 ma-2 white--text" color="pink" href="https://www.instagram.com/chuk1123/" target="_blank">
+            <v-icon left size="16">mdi-instagram</v-icon>
+            Instagram
+        </v-btn>
+        <v-btn large class="px-3 ma-2" color="info" href="www.linkedin.com/in/kevin-chu-072b7a211" target="_blank">
+            <v-icon left size="16">mdi-linkedin</v-icon>
+            Linkedin
+        </v-btn>
+        <v-btn large class="px-3 ma-2" color="dark" href="https://github.com/chuk1123" target="_blank">
+            <v-icon left size="16">mdi-github</v-icon>
+            Github
+        </v-btn>
+      </v-col>    
       <v-col cols=12 md=4>
         <v-img class="rounded-xl elevation-4 mx-auto" max-height="400" max-width="400" src="kevin2.jpg"/>
       </v-col>
