@@ -35,19 +35,16 @@
     <div class="text-h3 deep-purple--text text-center font-weight-bold mb-10">Projects</div>
     <v-row class="my-10" justify="center">
       <v-col v-for="item in projects" :key="item.id" cols=12 md=6>
-        <v-card class="pa-6 rounded-xl" max-height="750">
+        <v-card class="pa-6 rounded-xl fill-height">
           <v-card-title>
             {{item.title}}
           </v-card-title>
           <v-card-subtitle>
             {{item.subtitle}}
-          </v-card-subtitle>
-            <v-row align="center" no-gutters>
-              <v-col v-for="image in item.image" :key=image.id >
-                <v-img :src="image" class="my-2 mx-auto rounded-xl" max-height="400" max-width="300"/>            
-              </v-col>
-            </v-row>
-            
+          </v-card-subtitle >
+          <div v-for="image in item.image" :key=image.id >
+            <v-img :src="image" class="mt-6 mx-auto rounded-xl" max-height="250" max-width="400" contain/>            
+          </div>
         </v-card>
       </v-col>
     </v-row>
@@ -66,7 +63,7 @@ export default {
           subtitle: "Discord Bot to Recieve Real-Time Processed Data",
           image: [
             "https://cdn.discordapp.com/attachments/991573596524781588/993912460245475378/QQQ-2022-07-05-1day.jpeg",
-            "stock-bot.png"
+            "stock-bot.png",
           ],
         },
         {
