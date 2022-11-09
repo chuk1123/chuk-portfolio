@@ -7,6 +7,8 @@
         {{bio}}
       </div>
     </v-col>
+    <v-col cols=4>
+    </v-col>
   </v-row>
 </v-container>
 </template>
@@ -16,7 +18,8 @@ export default {
     data() {
         return {
           bio: `Hello, my name is Kevin. 
-               I am a student at Northwood High School in Irvine, California. I am Elson's dad.
+               I am a student at Northwood High School in Irvine, California. I am interested in computer science and codes in Python, C++ and Javascript. 
+               I have experience in machine learning, discord bots, web development, and competitive programming."
                `
         }
     },
