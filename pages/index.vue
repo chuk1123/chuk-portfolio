@@ -26,7 +26,7 @@
         </v-btn>
       </v-col>    
       <v-col cols=12 md=4>
-        <v-img class="rounded-xl elevation-4 mx-auto" max-height="400" max-width="400" src="kevin2.jpg"/>
+        <v-img class="rounded-xl elevation-4 mx-auto" max-height="400" max-width="400" src="kevin.jpeg"/>
       </v-col>
     </v-row>
   </v-container>

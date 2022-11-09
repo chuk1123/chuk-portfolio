@@ -7,9 +7,6 @@
         {{bio}}
       </div>
     </v-col>
-    <v-col cols=4>
-      <v-img class="rounded-xl" src="Screen Shot 2022-10-17 at 10.28.40 AM.png"></v-img>
-    </v-col>
   </v-row>
 </v-container>
 </template>
