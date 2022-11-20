@@ -18,9 +18,9 @@
   <div class="my-10">
     <div class="text-h4 deep-purple--text font-weight-bold mb-10">Skills and Experience</div>
     <v-row>
-      <v-col cols="4" v-for="(name, index) in experience" :key="index">
-        <v-card class="rounded-lg">
-          <v-card-title>
+      <v-col cols="12" md="4" v-for="(name, index) in experience" :key="index">
+        <v-card class="rounded-lg" height="100%">
+          <v-card-title class="justify-center">
             {{name}}
           </v-card-title>
         </v-card>
