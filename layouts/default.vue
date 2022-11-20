@@ -3,7 +3,7 @@
     background: linear-gradient(to bottom, white, white, #B39DDB);
   ">
     <v-app-bar
-      app height="80"
+      app height="80" color="white"
     >
     <v-container class="fill-height" style="max-width: 1280px;">
       <nuxt-link to="/" class="font-weight-bold text-h4 deep-purple--text text-decoration-none" align="center">Chuk</nuxt-link>
@@ -23,6 +23,7 @@
     <v-footer
       app
       absolute="fixed"
+      color="white"
     >
       <v-container style="max-width: 1280px;">
         <v-row justify="space-between">

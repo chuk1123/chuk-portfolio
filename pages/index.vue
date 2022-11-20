@@ -1,6 +1,6 @@
 <template>
 <div>
-  <v-container class="py-10 mb-6">
+  <v-container class="py-10">
     <v-row class="align-center justify-center">
       <v-col cols=12 md=6>
         <div class="text-h5 secondary--text mb-6">Hello, my name is </div>
