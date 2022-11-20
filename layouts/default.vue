@@ -22,13 +22,14 @@
     </v-main>
     <v-footer
       absolute="fixed"
-      height="60"
       app
       color="white"
     >
-        <span class="ml-6">&copy; {{ new Date().getFullYear() }} Chuk</span>
-        <v-spacer></v-spacer>
-        <span class="mr-6">Personal Portfolio</span>
+        <v-container class="fill-height" style="max-width: 1280px;">
+          <span class="ml-6">&copy; {{ new Date().getFullYear() }} Chuk</span>
+          <v-spacer></v-spacer>
+          <span class="mr-6">Personal Portfolio</span>
+        </v-container>
     </v-footer>
   </v-app>
 </template>
