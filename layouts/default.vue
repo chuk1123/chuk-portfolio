@@ -21,20 +21,14 @@
       </v-container>
     </v-main>
     <v-footer
-      app
       absolute="fixed"
+      height="60"
+      app
       color="white"
     >
-      <v-container style="max-width: 1280px;">
-        <v-row justify="space-between">
-          <v-col cols=2>
-            <span class="ml-6">&copy; {{ new Date().getFullYear() }} Chuk</span>
-          </v-col>
-          <v-col cols=2>
-            <span class="mr-6">Personal Portfolio</span>
-          </v-col>
-        </v-row>
-      </v-container>
+        <span class="ml-6">&copy; {{ new Date().getFullYear() }} Chuk</span>
+        <v-spacer></v-spacer>
+        <span class="mr-6">Personal Portfolio</span>
     </v-footer>
   </v-app>
 </template>
