@@ -1,10 +1,10 @@
 <template>
-  <v-container class="py-10">
+  <v-container class="py-6">
     <div class="my-10">
       <div class="text-h3 deep-purple--text font-weight-bold mb-10">
         About Me
       </div>
-      <br>
+      <br />
       <v-row justify="space-between">
         <v-col cols="12" md="8">
           <p class="double-space text-h5">
@@ -17,7 +17,7 @@
       </v-row>
     </div>
     <v-divider></v-divider>
-    <div class="my-10">
+    <div class="my-16">
       <div class="text-h4 deep-purple--text font-weight-bold mb-10">
         Skills and Experience
       </div>
@@ -36,6 +36,24 @@
         </v-col>
       </v-row>
     </div>
+    <v-divider></v-divider>
+    <div class="my-16">
+      <div class="text-h4 deep-purple--text font-weight-bold mb-10">
+        My Classes
+      </div>
+      <v-row>
+        <v-col cols="12" md="4" v-for="(c, index) in classes" :key="index">
+          <v-card class="rounded-lg" height="100%">
+            <v-card-title class="justify-center mb-2" align="center">
+              {{c.title}}
+            </v-card-title>
+            <v-card-subtitle class="justify-center" align="center">
+              Teacher: {{c.teacher}}
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
+      </v-row>
+    </div>
   </v-container>
 </template>
 
@@ -43,19 +61,39 @@
 export default {
   data() {
     return {
-      bio: `Hello, my name is Kevin Chu. 
-               I am currently a junior at Northwood High School in Irvine, California. I am interested in computer science and code in Python, C++ and Javascript. 
+      bio: `Hello, my name is Kevin Chu.
+               I am currently a junior at Northwood High School in Irvine, California. I am interested in computer science and code in Python, C++ and Javascript.
                I have experience in machine learning, discord bots, web development, and competitive programming.
-               In my free time, I also enjoy producing electronic music, solving Rubik's Cubes and playing tennis. 
+               In my free time, I also enjoy producing electronic music, solving Rubik's Cubes and playing tennis.
                `,
       experience: [
         "Python Programming",
         "Discord Bot Freelancing",
         "Machine Learning/Neural Networks",
         "Website Developer",
-        "USACO Bronze",
+        "USACO Silver",
         "Northwood JV Tennis",
       ],
+      classes: [
+        {
+          title: "European Literature", teacher: "Derek Roche"
+        },
+        {
+          title: "AP Biology", teacher: "Jacqueline Tran"
+        },
+        {
+          title: "AP Physics", teacher: "Beverly Matsuda"
+        },
+        {
+          title: "Chapman Calculus", teacher: "David Lee"
+        },
+        {
+          title: "Honors Spanish 4", teacher: "Haydee Vicente"
+        },
+        {
+          title: "Wind Symphony", teacher: "Ben Case"
+        }
+      ]
     };
   },
   head() {

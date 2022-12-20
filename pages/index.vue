@@ -4,7 +4,7 @@
     <v-row class="align-center justify-center">
       <v-col cols=12 md=6>
         <div class="text-h5 secondary--text mb-6">Hello, my name is </div>
-        <div class="display-3 mb-6"><span class="deep-purple--text">Kevin Chu.</span></div>
+        <div class="display-3 mb-6"><span class="deep-purple--text font-weight-medium">Kevin Chu</span></div>
         <div class="text-h5 mb-6">Code in Python, C++</div>
         <div class="text-h6 mb-6">Machine Learning, Web Development, Discord Bots</div>
         <br>
@@ -26,7 +26,7 @@
         </v-btn>
       </v-col>    
       <v-col cols=12 md=4>
-        <v-img class="rounded-xl elevation-4 mx-auto" max-height="400" max-width="400" src="kevin3.jpeg"/>
+        <v-img class="rounded-xl elevation-20 mx-auto" max-height="400" max-width="400" src="kevin3.jpeg"/>
       </v-col>
     </v-row>
   </v-container>
