@@ -1,6 +1,6 @@
 <template>
   <v-app style="background: linear-gradient(to bottom, white, white, #b39ddb)">
-    <v-app-bar app height="80" color="white" flat>
+    <v-app-bar app height="80" color="white">
       <v-container class="fill-height" style="max-width: 1280px">
         <nuxt-link
           to="/"
