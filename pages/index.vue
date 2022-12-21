@@ -1,6 +1,6 @@
 <template>
 <div>
-  <v-container class="py-10">
+  <v-container class="py-16">
     <v-row class="align-center justify-center">
       <v-col cols=12 md=6>
         <div class="text-h5 secondary--text mb-6">Hello, my name is </div>
@@ -31,23 +31,22 @@
     </v-row>
   </v-container>
   <v-divider></v-divider>
-  <v-container class="py-10">
-    <div class="text-h3 deep-purple--text text-center font-weight-bold mb-10">About Me</div>
-    <v-row align="center" justify="center">
-      <v-col md="8" cols="12">
-        <h7 class="double-space ml-10 text-h6"> 
-          {{bio}} 
-        </h7>
-      </v-col>
-      <v-col md="4" cols="12" align="center">
-        <v-btn color="deep-purple lighten-2" class="white--text" x-large to="/about">
-          Learn More
-        </v-btn>
-      </v-col>
-    </v-row>
+  <v-container class="py-16">
+    <div class="text-h3 deep-purple--text text-center font-weight-bold mb-10">
+      About Me
+    </div>
+    <h7 class="double-space mx-16 mb-6 text-h6"> 
+      {{bio}} 
+    </h7>
+    <nuxt-link 
+      class="text-decoration-none font-weight-bold text-h6 deep-purple--text mx-16" 
+      to="/about"
+    >
+      Learn More
+    </nuxt-link>
   </v-container>
   <v-divider></v-divider>
-  <v-container class="py-10">
+  <v-container class="py-16">
     <div class="text-h3 deep-purple--text text-center font-weight-bold mb-10">Projects</div>
     <v-row class="my-10" justify="center">
       <v-col v-for="item in projects" :key="item.id" cols=12 md=6>
