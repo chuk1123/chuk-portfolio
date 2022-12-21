@@ -108,6 +108,7 @@ export default {
         "Website Developer",
         "USACO Silver",
         "Northwood JV Tennis",
+        "LingoX Technology Officer"
       ],
       classes: [
         {
