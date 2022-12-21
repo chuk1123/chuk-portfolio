@@ -35,11 +35,11 @@
     <div class="text-h3 deep-purple--text text-center font-weight-bold mb-10">
       About Me
     </div>
-    <h7 class="double-space mx-16 mb-6 text-h6"> 
+    <h7 class="double-space mx-md-16 mb-6 text-h6"> 
       {{bio}} 
     </h7>
     <nuxt-link 
-      class="text-decoration-none font-weight-bold text-h6 deep-purple--text mx-16" 
+      class="text-decoration-none font-weight-bold text-h6 deep-purple--text mx-md-16" 
       to="/about"
     >
       Learn More
