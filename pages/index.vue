@@ -32,6 +32,22 @@
   </v-container>
   <v-divider></v-divider>
   <v-container class="py-10">
+    <div class="text-h3 deep-purple--text text-center font-weight-bold mb-10">About Me</div>
+    <v-row align="center" justify="center">
+      <v-col md="8" cols="12">
+        <h7 class="double-space ml-10 text-h6"> 
+          {{bio}} 
+        </h7>
+      </v-col>
+      <v-col md="4" cols="12" align="center">
+        <v-btn color="deep-purple lighten-2" class="white--text" x-large to="/about">
+          Learn More
+        </v-btn>
+      </v-col>
+    </v-row>
+  </v-container>
+  <v-divider></v-divider>
+  <v-container class="py-10">
     <div class="text-h3 deep-purple--text text-center font-weight-bold mb-10">Projects</div>
     <v-row class="my-10" justify="center">
       <v-col v-for="item in projects" :key="item.id" cols=12 md=6>
@@ -57,6 +73,10 @@
 export default {
   data() {
     return {
+      bio: `
+            I am currently a junior at Northwood High School in Irvine, California. I am interested in computer science and code in Python, C++ and Javascript.
+            I have experience in machine learning, discord bots, web development, and competitive programming.
+            `,
       projects: [
         {
           title: "Discord Stock Bot",
@@ -84,3 +104,14 @@ export default {
   }
 }
 </script>
+
+<style>
+.double-space {
+  line-height: 2 !important;
+  display: inline-block;
+}
+.v-card__text,
+.v-card__title {
+  word-break: normal !important;
+}
+</style>

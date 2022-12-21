@@ -28,7 +28,7 @@
           v-for="(name, index) in experience"
           :key="index"
         >
-          <v-card class="rounded-lg" height="100%">
+          <v-card class="rounded-lg fill-height">
             <v-card-title class="justify-center" align="center">
               {{ name }}
             </v-card-title>
@@ -43,13 +43,48 @@
       </div>
       <v-row>
         <v-col cols="12" md="4" v-for="(c, index) in classes" :key="index">
-          <v-card class="rounded-lg" height="100%">
-            <v-card-title class="justify-center mb-2" align="center">
-              {{c.title}}
+          <v-card class="rounded-lg fill-height">
+            <v-card-title class="justify-center mb-2">
+              {{ c.title }}
             </v-card-title>
             <v-card-subtitle class="justify-center" align="center">
-              Teacher: {{c.teacher}}
+              Teacher: {{ c.teacher }}
             </v-card-subtitle>
+          </v-card>
+        </v-col>
+      </v-row>
+    </div>
+    <v-divider></v-divider>
+    <div class="my-16">
+      <div class="text-h4 deep-purple--text font-weight-bold mb-10">
+        My Clubs
+      </div>
+      <v-row>
+        <v-col cols="12" md="4" v-for="(c, index) in clubs" :key="index">
+          <v-card class="rounded-lg fill-height">
+            <v-card-title class="justify-center" align="center">
+              {{ c }}
+            </v-card-title>
+          </v-card>
+        </v-col>
+      </v-row>
+    </div>
+    <v-divider></v-divider>
+    <div class="my-16">
+      <div class="text-h4 deep-purple--text font-weight-bold mb-10">
+        My Achievements
+      </div>
+      <v-row>
+        <v-col
+          cols="12"
+          md="4"
+          v-for="(achievement, index) in achievements"
+          :key="index"
+        >
+          <v-card class="rounded-lg fill-height">
+            <v-card-title class="justify-center" align="center">
+              {{ achievement }}
+            </v-card-title>
           </v-card>
         </v-col>
       </v-row>
@@ -62,7 +97,7 @@ export default {
   data() {
     return {
       bio: `Hello, my name is Kevin Chu.
-               I am currently a junior at Northwood High School in Irvine, California. I am interested in computer science and code in Python, C++ and Javascript.
+               I am currently a junior at Northwood High School in Irvine, California. I am passionate about computer science and code in Python, C++ and Javascript.
                I have experience in machine learning, discord bots, web development, and competitive programming.
                In my free time, I also enjoy producing electronic music, solving Rubik's Cubes and playing tennis.
                `,
@@ -76,24 +111,52 @@ export default {
       ],
       classes: [
         {
-          title: "European Literature", teacher: "Derek Roche"
+          title: "European Literature",
+          teacher: "Derek Roche",
         },
         {
-          title: "AP Biology", teacher: "Jacqueline Tran"
+          title: "AP Biology",
+          teacher: "Jacqueline Tran",
         },
         {
-          title: "AP Physics", teacher: "Beverly Matsuda"
+          title: "AP Physics",
+          teacher: "Beverly Matsuda",
         },
         {
-          title: "Chapman Calculus", teacher: "David Lee"
+          title: "Chapman Calculus",
+          teacher: "David Lee",
         },
         {
-          title: "Honors Spanish 4", teacher: "Haydee Vicente"
+          title: "Honors Spanish 4",
+          teacher: "Haydee Vicente",
         },
         {
-          title: "Wind Symphony", teacher: "Ben Case"
-        }
-      ]
+          title: "Wind Symphony",
+          teacher: "Ben Case",
+        },
+        {
+          title: "AP Physics C Mechanics",
+          teacher: "Bilal Sarimeseli",
+        },
+        {
+          title: "AP Computer Science A",
+          teacher: "Self-Study",
+        },
+        {
+          title: "AP Computer Science Principles",
+          teacher: "Self-Study",
+        },
+        {
+          title: "UCLA CS31",
+          teacher: "Howard",
+        },
+      ],
+      clubs: [
+        "Northwood Machine Learning Club",
+        "Computer Science Club",
+        "Marching Band",
+      ],
+      achievements: ["PVSA Gold Award", "USACO Silver", "2022 Tennis Most Improved Player"],
     };
   },
   head() {
