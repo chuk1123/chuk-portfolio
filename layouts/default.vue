@@ -25,6 +25,10 @@
       <v-container class="fill-height" style="max-width: 1280px">
         <span class="ml-6">&copy; {{ new Date().getFullYear() }} Chuk</span>
         <v-spacer></v-spacer>
+        <v-btn medium class="mx-10 elevation-0" color="transparent" href="https://github.com/chuk1123/chuk-portfolio" target="_blank">
+            <v-icon class="mr-2" size="30">mdi-github</v-icon>
+            Website Github
+        </v-btn>
         <span class="mr-6">Personal Portfolio</span>
       </v-container>
     </v-footer>
