@@ -3,7 +3,7 @@
   <v-container class="py-16">
     <v-row class="align-center justify-center">
       <v-col cols=12 md=6>
-        <div class="text-h5 secondary--text mb-6">Hello, my name is </div>
+        <div class="text-h5 mb-6">Hello, my name is </div>
         <div class="display-3 mb-6"><span class="deep-purple--text font-weight-medium">Kevin Chu</span></div>
         <div class="text-h5 mb-6">Code in Python, C++, Javascript</div>
         <div class="text-h6 mb-6">Machine Learning, Web Development, Discord Bots</div>
