@@ -157,7 +157,7 @@ export default {
         "Computer Science Club",
         "Marching Band",
       ],
-      achievements: ["PVSA Gold Award", "USACO Silver", "2022 Tennis Most Improved Player", "JV Singles #1"],
+      achievements: ["PVSA Gold Award", "USACO Gold", "2022 Tennis Most Improved Player", "JV Singles #1"],
     };
   },
   head() {
