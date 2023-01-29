@@ -1,5 +1,7 @@
 # Chuk
 
+Personal portfolio website about myself, my experiences, achievements and projects.
+
 ## Build Setup
 
 ```bash
