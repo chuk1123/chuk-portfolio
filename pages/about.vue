@@ -106,7 +106,7 @@ export default {
         "Discord Bot Freelancing",
         "Machine Learning/Neural Networks",
         "Website Developer",
-        "USACO Silver",
+        "USACO Gold",
         "Northwood JV Tennis",
         "LingoX Technology Officer"
       ],
