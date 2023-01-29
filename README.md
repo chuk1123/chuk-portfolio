@@ -1,6 +1,6 @@
 # Chuk
 
-Personal portfolio website about myself, my experiences, achievements and projects.
+Personal portfolio website about my experiences, achievements and projects.
 
 ## Build Setup
 
