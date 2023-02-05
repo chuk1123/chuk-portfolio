@@ -107,7 +107,7 @@ export default {
         "Machine Learning/Neural Networks",
         "Website Developer",
         "USACO Gold",
-        "Northwood JV Tennis",
+        "Northwood Tennis Team",
         "LingoX Technology Officer"
       ],
       classes: [
