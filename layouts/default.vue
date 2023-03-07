@@ -14,6 +14,14 @@
             {{ item.title }}
           </v-btn>
         </div>
+        <v-btn 
+          color="deep-purple"
+          class="mx-2" 
+          outlined
+          href="KevinChuResume.pdf"
+          download>
+          Resume
+        </v-btn>
       </v-container>
     </v-app-bar>
     <v-main>
