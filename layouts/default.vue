@@ -18,7 +18,7 @@
           color="deep-purple"
           class="mx-2" 
           outlined
-          href="KevinChuResume.pdf"
+          href="KevinRes.pdf"
           download>
           Resume
         </v-btn>
