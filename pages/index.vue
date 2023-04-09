@@ -97,10 +97,22 @@
                 :src="image"
                 class="mt-6 mx-auto rounded-xl"
                 max-height="250"
-                max-width="400"
+                max-width="500"
                 contain
               />
             </div>
+            <div class="mt-8 ml-8">
+              <v-btn
+              class="px-6 ma-2 white--text rounded-xl"
+              color="primary lighten-1"
+              :href="item.link"
+              target="_blank"
+              >
+                <v-icon left size="16">mdi-github</v-icon>
+                Github
+              </v-btn>
+            </div>
+            
           </v-card>
         </v-col>
       </v-row>
@@ -124,14 +136,16 @@ export default {
             "https://cdn.discordapp.com/attachments/991573596524781588/993912460245475378/QQQ-2022-07-05-1day.jpeg",
             "stock-bot.png",
           ],
+          link: "https://github.com/chuk1123/stock_bot",
         },
         {
           title: "Snake AI",
           subtitle: "AI to Play Snake Using Deep Reinforcement Learning",
           image: [
-            "https://media.istockphoto.com/vectors/classic-retro-snakestyle-game-basic-digital-screen-for-your-design-vector-id1363586427?k=20&m=1363586427&s=612x612&w=0&h=uKW6cbMQCS4ydTzsdIaRiUc1L7Ike-3N0qzBjm-uwis=",
-            "https://cdn-icons-png.flaticon.com/512/6461/6461928.png",
+            "Snake.png",
+            "neural_network.png",
           ],
+          link: "https://github.com/chuk1123/snake_ai_2",
         },
       ],
     };
