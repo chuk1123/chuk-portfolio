@@ -1,6 +1,23 @@
 <template>
   <v-app style="background: linear-gradient(to bottom, white, white, #b39ddb)">
+    <v-navigation-drawer v-model="drawer" temporary app>
+      <v-list>
+        <v-subheader class="text-uppercase font-weight-bold">
+          Pages
+        </v-subheader>
+        <div v-for="(item, index) in items" :key="index">
+          <v-list-item :to="item.to">
+            <v-list-item-content>
+              <v-list-item-title class="py-1">
+                {{ item.title }}
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </div>
+      </v-list>
+    </v-navigation-drawer>
     <v-app-bar app height="80" color="white">
+      <v-app-bar-nav-icon class="d-md-none" @click="drawer = !drawer" />
       <v-container class="fill-height" style="max-width: 1280px">
         <nuxt-link
           to="/"
@@ -9,7 +26,7 @@
           >Chuk</nuxt-link
         >
         <v-spacer />
-        <div v-for="item in items" :key="item.id">
+        <div v-for="item in items" :key="item.id" class="d-none d-md-block">
           <v-btn text :to="item.to" class="mx-1">
             {{ item.title }}
           </v-btn>
@@ -33,7 +50,7 @@
       <v-container class="fill-height" style="max-width: 1280px">
         <span>&copy; {{ new Date().getFullYear() }} Chuk</span>
         <v-spacer></v-spacer>
-        <v-btn medium class="mx-10 elevation-0" color="transparent" href="https://github.com/chuk1123/chuk-portfolio" target="_blank">
+        <v-btn medium class="mx-10 elevation-0 d-none d-sm-flex" color="transparent" href="https://github.com/chuk1123/chuk-portfolio" target="_blank">
             <v-icon class="mr-2" size="30">mdi-github</v-icon>
             Website Github
         </v-btn>
@@ -59,6 +76,7 @@ export default {
         },
       ],
       title: "Chuk",
+      drawer: false,
     };
   },
 };

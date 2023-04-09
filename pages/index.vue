@@ -101,12 +101,13 @@
                 contain
               />
             </div>
-            <div class="mt-8 ml-8">
+            <div class="mt-16 ml-4">
               <v-btn
               class="px-6 ma-2 white--text rounded-xl"
               color="primary lighten-1"
               :href="item.link"
               target="_blank"
+              absolute bottom 
               >
                 <v-icon left size="16">mdi-github</v-icon>
                 Github
