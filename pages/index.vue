@@ -126,7 +126,7 @@ export default {
   data() {
     return {
       bio: `
-            I am currently a junior at Northwood High School in Irvine, California. I am interested in computer science and code in Python, C++ and Javascript.
+            I am currently a rising senior at Northwood High School in Irvine, California. I am interested in computer science and code in Python, C++ and Javascript.
             I have experience in machine learning, discord bots, web development, and competitive programming.
             `,
       projects: [
