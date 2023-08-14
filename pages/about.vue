@@ -124,7 +124,7 @@ export default {
           teacher: "Beverly Matsuda",
         },
         {
-          title: "Chapman Calculus",
+          title: "Chapman Calculus 1/2",
           teacher: "David Lee",
         },
         {
