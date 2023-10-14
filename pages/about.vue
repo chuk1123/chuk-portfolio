@@ -97,7 +97,7 @@ export default {
   data() {
     return {
       bio: `Hello, my name is Kevin Chu.
-               I am currently a rising senior at Northwood High School in Irvine, California. I am passionate about computer science and code in Python, C++ and Javascript.
+               I am currently a senior at Northwood High School in Irvine, California. I am passionate about computer science and code in Python, C++ and Javascript.
                I have experience in machine learning, discord bots, web development, and competitive programming.
                In my free time, I also enjoy producing electronic music, solving Rubik's Cubes and playing tennis.
                `,
@@ -108,7 +108,9 @@ export default {
         "Website Developer",
         "USACO Gold",
         "Northwood Tennis Team",
-        "LingoX Technology Officer"
+        "LingoX Technology Officer",
+        "Google Open Source Project Intern",
+        "Northwood AI Club Vice President",
       ],
       classes: [
         {
