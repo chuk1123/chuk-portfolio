@@ -134,7 +134,7 @@ export default {
           title: "Discord Stock Bot",
           subtitle: "Discord Bot to Recieve Real-Time Processed Data",
           image: [
-            "https://cdn.discordapp.com/attachments/991573596524781588/993912460245475378/QQQ-2022-07-05-1day.jpeg",
+            "Stock Bot QQQ Example.jpeg",
             "stock-bot.png",
           ],
           link: "https://github.com/chuk1123/stock_bot",
