@@ -97,7 +97,7 @@ export default {
   data() {
     return {
       bio: `Hello, my name is Kevin Chu.
-               I am currently a senior at Northwood High School in Irvine, California. I am passionate about computer science and code in Python, C++ and Javascript.
+               I am currently a freshman at UC Berkeley. I am passionate about computer science and code in Python, C++ and Javascript.
                I have experience in machine learning, discord bots, web development, and competitive programming.
                In my free time, I also enjoy producing electronic music, solving Rubik's Cubes and playing tennis.
                `,
