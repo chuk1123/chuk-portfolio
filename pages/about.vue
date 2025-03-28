@@ -39,7 +39,25 @@
     <v-divider></v-divider>
     <div class="my-16">
       <div class="text-h4 deep-purple--text font-weight-bold mb-10">
-        My Classes
+        UC Berkeley Coursework
+      </div>
+      <v-row>
+        <v-col cols="12" md="4" v-for="(c, index) in coursework" :key="index">
+          <v-card class="rounded-lg fill-height">
+            <v-card-title class="justify-center mb-2">
+              {{ c.title }}
+            </v-card-title>
+            <v-card-subtitle class="justify-center" align="center">
+              Grade: {{ c.grade }}
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
+      </v-row>
+    </div>
+    <v-divider></v-divider>
+    <div class="my-16">
+      <div class="text-h4 deep-purple--text font-weight-bold mb-10">
+        High School Classes
       </div>
       <v-row>
         <v-col cols="12" md="4" v-for="(c, index) in classes" :key="index">
@@ -97,7 +115,7 @@ export default {
   data() {
     return {
       bio: `Hello, my name is Kevin Chu.
-               I am currently a freshman at UC Berkeley. I am passionate about computer science and code in Python, C++ and Javascript.
+               I am currently a freshman at UC Berkeley studying CS and DS. I am passionate about computer science and code in Python, C++ and Javascript.
                I have experience in machine learning, discord bots, web development, and competitive programming.
                In my free time, I also enjoy producing electronic music, solving Rubik's Cubes and playing tennis.
                `,
@@ -111,6 +129,36 @@ export default {
         "LingoX Technology Officer",
         "Google Open Source Project Intern",
         "Northwood AI Club Vice President",
+      ],
+      coursework: [
+        {
+          title: "CS 61A",
+          grade: "A"
+        },
+        {
+          title: "CS 61B",
+          grade: "A"
+        },
+        {
+          title: "CS 70",
+          grade: "IP"
+        },
+        {
+          title: "Data 8",
+          grade: "IP: A+"
+        },
+        {
+          title: "Data 100",
+          grade: "IP"
+        },
+        {
+          title: "Math 53",
+          grade: "IP"
+        },
+        {
+          title: "Math 56",
+          grade: "A+"
+        },
       ],
       classes: [
         {

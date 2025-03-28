@@ -35,7 +35,7 @@
           color="deep-purple"
           class="mx-2" 
           outlined
-          href="KevinResume_AprilVersion.pdf"
+          href="Kevin Chu Resume 2025.pdf"
           download>
           Resume
         </v-btn>

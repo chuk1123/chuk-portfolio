@@ -7,7 +7,7 @@
           <div class="display-3 mb-6">
             <span class="deep-purple--text font-weight-medium">Kevin Chu</span>
           </div>
-          <div class="text-h5 mb-6">Code in Python, C++, Javascript</div>
+          <div class="text-h5 mb-6">Code in Python, Java, C++, Javascript</div>
           <div class="text-h6 mb-6">
             Machine Learning, Web Development, Discord Bots
           </div>
@@ -58,7 +58,7 @@
             class="rounded-xl elevation-20 mx-auto"
             max-height="400"
             max-width="400"
-            src="kevin-photo.jpg"
+            src="Kevin-Berkeley.jpeg"
           />
         </v-col>
       </v-row>
@@ -126,7 +126,7 @@ export default {
   data() {
     return {
       bio: `
-            I am currently a freshman at UC Berkeley. I am interested in computer science and code in Python, C++ and Javascript.
+            I am currently a freshman at UC Berkeley studying CS and DS. I am interested in computer science and code in Python, C++ and Javascript.
             I have experience in machine learning, discord bots, web development, and competitive programming.
             `,
       projects: [
