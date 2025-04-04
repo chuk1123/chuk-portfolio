@@ -86,7 +86,6 @@
           <v-col cols="12" md="6" class="d-flex justify-center fade-in delay-2">
             <div class="profile-img-container">
               <v-img
-                class="rounded-xl"
                 height="400"
                 width="400"
                 cover

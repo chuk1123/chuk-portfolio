@@ -108,8 +108,9 @@
           <v-col v-for="(course, index) in sortedCoursework" :key="index" cols="12" sm="6" md="4" class="mb-6">
             <v-card class="pa-4 rounded-xl card-hover" elevation="3" height="100%">
               <v-card-title class="text-h6 font-weight-bold d-flex align-center">
-                <span class="text-primary mr-2">{{ course.grade }}</span>
                 {{ course.title }}
+                <v-spacer></v-spacer>
+                <span class="text-secondary">{{ course.grade }}</span>
               </v-card-title>
               <v-card-text class="pt-2 text-wrap">
                 {{ course.description }}
