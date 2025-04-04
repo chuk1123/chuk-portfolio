@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&family=Alice:wght@400;500&display=swap');
+
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --primary: #673AB7;
+    --secondary: #26A69A;
+    --accent: #00BFA5;
+    --background: #ffffff;
+    --card-bg: #ffffff;
+    --text-primary: #212121;
+    --text-secondary: #757575;
+    --transition: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+    min-height: 100%;
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(254, 252, 255, 1) 65%,
+            rgba(252, 247, 255, 1) 80%,
+            rgba(249, 242, 255, 1) 90%,
+            rgba(245, 235, 255, 1) 100%);
+    background-attachment: fixed !important;
+    background-size: cover;
+}
+
+/* Ensure no other elements create scrolling gradients */
+body,
+.v-application,
+.v-main,
+section,
+.app-container {
+    background-attachment: fixed !important;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    background: transparent;
+}
+
+/* Remove the section-specific gradient since we now have a global one */
+.bg-gradient {
+    position: relative;
+}
+
+.bg-gradient::before {
+    content: none;
+}
+
+/* Animations - DISABLED
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+*/
+
+.fade-in {
+    /* animation disabled */
+    opacity: 1 !important;
+}
+
+.delay-1,
+.delay-2,
+.delay-3,
+.delay-4 {
+    /* animation delays disabled */
+}
+
+/* Cards */
+.card-hover {
+    transition: var(--transition);
+    cursor: pointer;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero section */
+.hero-section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+/* Profile image */
+.profile-img-container {
+    width: 400px;
+    height: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(103, 58, 183, 0.3);
+}
+
+/* Skills */
+.skill-bar {
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--primary);
+    transition: width 1.5s ease-in-out;
+}
+
+/* Project cards */
+.project-card {
+    position: relative;
+    height: 100%;
+}
+
+.tech-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 4px;
+    background-color: rgba(103, 58, 183, 0.1);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--primary);
+}
+
+.double-space {
+    line-height: 2 !important;
+    display: inline-block;
+}
+
+.v-card__text,
+.v-card__title {
+    word-break: normal !important;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--primary);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 10px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: -12px;
+    background-color: white;
+    border: 4px solid var(--primary);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-left {
+    left: 0;
+}
+
+.timeline-right {
+    left: 50%;
+}
+
+.timeline-right::after {
+    left: -12px;
+}
+
+@media screen and (max-width: 960px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item::after {
+        left: 19px;
+        right: auto;
+    }
+
+    .timeline-right {
+        left: 0;
+    }
+}
+
+/* Page transitions - DISABLED
+.page-enter-active,
+.page-leave-active {
+    transition: opacity 0.3s;
+}
+
+.page-enter,
+.page-leave-to {
+    opacity: 0;
+}
+*/
+
+/* Hide content until Vue is fully loaded */
+[v-cloak] {
+    display: none;
+}

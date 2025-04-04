@@ -1,6 +1,76 @@
-# Chuk
+# Kevin Chu's Portfolio
 
-Personal portfolio website about my experiences, achievements and projects.
+Personal portfolio website built with Nuxt 3 and Vuetify 3.
+
+## Upgrade Information
+
+This project has been upgraded from Nuxt 2 to Nuxt 3. Key changes include:
+
+- Migration from Nuxt 2.15.8 to Nuxt 3.8.2
+- Migration from Vuetify 2 to Vuetify 3
+- Transition from Options API to Composition API with `<script setup>`
+- Updated project structure and configuration
+- TypeScript support with optional enforcement
+
+## Setup
+
+Make sure to install the dependencies:
+
+```bash
+# npm
+npm install
+
+# yarn
+yarn install
+
+# pnpm
+pnpm install
+```
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# yarn
+yarn dev
+
+# pnpm
+pnpm dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# yarn
+yarn build
+
+# pnpm
+pnpm build
+```
+
+Preview the production build:
+
+```bash
+# npm
+npm run preview
+
+# yarn
+yarn preview
+
+# pnpm
+pnpm preview
+```
+
+Check out the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) for more information.
 
 ## Build Setup
 
