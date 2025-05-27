@@ -257,7 +257,7 @@ const coursework = [
   },
   {
     title: "CS 70",
-    grade: "IP",
+    grade: "A",
     description: "Discrete Mathematics and Probability Theory"
   },
   {
@@ -267,12 +267,12 @@ const coursework = [
   },
   {
     title: "Data 100",
-    grade: "IP",
+    grade: "A+",
     description: "Principles and Techniques of Data Science"
   },
   {
     title: "Math 53",
-    grade: "IP",
+    grade: "A+",
     description: "Multivariable Calculus"
   },
 ]
