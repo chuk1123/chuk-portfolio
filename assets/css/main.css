@@ -1,39 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&family=Alice:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --font-family: 'Poppins', sans-serif;
-    --primary: #673AB7;
-    --secondary: #26A69A;
-    --accent: #00BFA5;
+    --font-family: 'Inter', 'Georgia', serif;
+    --primary: #2c3e50;
+    --secondary: #34495e;
+    --accent: #7f8c8d;
     --background: #ffffff;
-    --card-bg: #ffffff;
-    --text-primary: #212121;
-    --text-secondary: #757575;
-    --transition: all 0.3s ease;
+    --card-bg: #fafafa;
+    --text-primary: #2c3e50;
+    --text-secondary: #7f8c8d;
+    --border-light: #ecf0f1;
+    --transition: all 0.2s ease;
 }
 
 html {
     scroll-behavior: smooth;
     min-height: 100%;
-    background: linear-gradient(to bottom,
-            rgba(255, 255, 255, 1) 0%,
-            rgba(255, 255, 255, 1) 50%,
-            rgba(254, 252, 255, 1) 65%,
-            rgba(252, 247, 255, 1) 80%,
-            rgba(249, 242, 255, 1) 90%,
-            rgba(245, 235, 255, 1) 100%);
-    background-attachment: fixed !important;
-    background-size: cover;
+    background: #ffffff;
 }
 
-/* Ensure no other elements create scrolling gradients */
-body,
-.v-application,
-.v-main,
-section,
-.app-container {
-    background-attachment: fixed !important;
-}
+/* Clean body styling */
 
 body {
     font-family: var(--font-family);
@@ -81,46 +67,49 @@ body {
 /* Cards */
 .card-hover {
     transition: var(--transition);
-    cursor: pointer;
     background-color: var(--card-bg);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 16px;
-    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid var(--border-light);
 }
 
 .card-hover:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border-color: var(--accent);
 }
 
-/* Hero section */
-.hero-section {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-}
+/* Hero section - removed duplicate */
 
 .hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 400;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
 }
 
 /* Profile image */
 .profile-img-container {
-    width: 400px;
-    height: 400px;
-    border-radius: 16px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(103, 58, 183, 0.3);
+    margin: 0 auto;
+    background-color: #ecebff;
+    position: relative;
 }
+
+.profile-img-container .v-img {
+    position: relative;
+    top: 30px;
+}
+
 
 /* Skills */
 .skill-bar {
@@ -154,13 +143,52 @@ body {
 }
 
 .double-space {
-    line-height: 2 !important;
+    line-height: 1.7 !important;
     display: inline-block;
+    font-size: 1rem;
+    color: var(--text-primary);
+    font-weight: 400;
 }
 
 .v-card__text,
 .v-card__title {
     word-break: normal !important;
+}
+
+/* Section spacing improvements */
+section {
+    padding: 2rem 0;
+}
+
+section:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.hero-section {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+/* Button styles */
+.v-btn {
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    border-radius: 4px !important;
+}
+
+/* Text hierarchy */
+.text-h3 {
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-size: 1.8rem !important;
+}
+
+.text-h6 {
+    font-weight: 500;
+    color: var(--text-primary);
 }
 
 /* Timeline */

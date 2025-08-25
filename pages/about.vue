@@ -165,9 +165,10 @@
       <v-container>
         <v-row class="justify-center fade-in">
           <v-col cols="12" md="8" class="text-center">
-            <h2 class="text-h3 font-weight-bold mb-6">Want to know more?</h2>
+            <h2 class="text-h3 font-weight-bold mb-6">Ready to Connect?</h2>
             <p class="text-body-1 mb-10">
-              Feel free to download my resume or reach out if you'd like to connect!
+              I'm always excited to discuss new opportunities, innovative projects, or simply chat about technology. 
+              Download my resume to learn more about my experience, or reach out directly!
             </p>
             <div class="d-flex flex-wrap justify-center">
               <v-btn
@@ -175,7 +176,7 @@
                 color="primary"
                 variant="elevated"
                 rounded="xl"
-                href="/Kevin Chu Resume 2025.pdf"
+                href="/Kevin Chu Resume August 2025.pdf"
                 download
                 class="px-8 py-3 mx-4 mb-4"
               >
@@ -187,7 +188,7 @@
                 color="primary"
                 variant="outlined"
                 rounded="xl"
-                href="mailto:kevin.chu@berkeley.edu"
+                href="mailto:chuk1123@berkeley.edu"
                 class="px-8 py-3 mx-4 mb-4"
               >
                 <v-icon start>mdi-email</v-icon>
@@ -210,10 +211,15 @@ useHead({
 })
 
 // Bio text
-const bio = `Hello, my name is Kevin Chu.
-  I am currently a freshman at UC Berkeley studying CS and DS. I am passionate about computer science and code in Python, C++ and Javascript.
-  I have experience in machine learning, discord bots, web development, and competitive programming.
-  In my free time, I also enjoy producing electronic music, solving Rubik's Cubes and playing tennis.
+const bio = `I am Kevin Chu, a sophomore at UC Berkeley pursuing dual degrees in Computer Science and Data Science with a focus on research and academic excellence.
+
+My coursework demonstrates strong performance across fundamental computer science and mathematics courses, including Data Structures & Algorithms (CS 61B), Discrete Mathematics and Probability Theory (CS 70), and Principles of Data Science (Data 100). I have developed proficiency in multiple programming languages including Python, C++, Java, and JavaScript.
+
+My research interests center on machine learning algorithms, computational optimization, and data analysis methodologies. Through independent projects and academic work, I have gained experience in neural network implementation, algorithmic problem-solving, and statistical analysis.
+
+I have contributed to open-source development through Google's internship program and have demonstrated leadership in academic organizations, serving as Vice President of the Northwood AI Club. My competitive programming experience, achieving USACO Gold level, reflects my commitment to algorithmic thinking and problem-solving excellence.
+
+I am actively seeking research opportunities to contribute to academic projects and advance my understanding of computational sciences and their applications to real-world problems.
 `
 
 // Skills array with percentages
@@ -227,15 +233,15 @@ const skills = [
 
 // Experience list
 const experience = [
-  "Python Programming",
-  "Discord Bot Freelancing",
-  "Machine Learning/Neural Networks",
-  "Website Developer",
-  "USACO Gold",
-  "Northwood Tennis Team",
-  "LingoX Technology Officer",
   "Google Open Source Project Intern",
   "Northwood AI Club Vice President",
+  "LingoX Technology Officer",
+  "Machine Learning & Neural Networks",
+  "Full-Stack Web Development",
+  "Discord Bot Development & Freelancing",
+  "USACO Gold Competitive Programmer",
+  "Northwood Tennis Team Member",
+  "Electronic Music Producer",
 ]
 
 // Coursework with descriptions

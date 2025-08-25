@@ -6,67 +6,44 @@
         <v-row class="align-center">
           <v-col cols="12" md="6" class="fade-in">
             <h6 class="text-h6 text-secondary font-weight-regular mb-2">
-              Hello, my name is
+              Hi there, I'm
             </h6>
             <h1 class="hero-title text-primary font-weight-bold mb-2">
               Kevin Chu
             </h1>
             <h2 class="hero-subtitle font-weight-medium mb-6">
-              CS & DS Student at UC Berkeley
+              Sophomore in Computer Science & Data Science, UC Berkeley
             </h2>
-            <p class="text-body-1 mb-8">
-              Machine Learning, Web Development, and Discord Bots.<br>
-              Passionate about solving real-world problems with technology, especially in healthcare.
+            <p class="text-body-1 mb-6">
+              Focused on Machine Learning Research, Algorithmic Problem Solving, and Data Science Applications.<br>
+              Seeking research opportunities in AI and computational methods for real-world problems.
             </p>
             
             <div class="d-flex flex-wrap mb-6">
               <v-btn
-                size="large"
-                class="mr-3 mb-3"
-                rounded="xl"
-                variant="elevated"
+                class="mr-4 mb-3"
+                variant="outlined"
                 color="primary"
                 href="#projects"
               >
-                <v-icon start>mdi-rocket-launch</v-icon>
-                See My Work
+                Projects
               </v-btn>
               <v-btn
-                size="large"
-                class="mr-3 mb-3"
-                rounded="xl"
-                variant="outlined"
+                class="mr-4 mb-3"
+                variant="text"
                 color="primary"
                 to="/about"
               >
-                <v-icon start>mdi-account</v-icon>
-                About Me
+                About
               </v-btn>
             </div>
             
             <div class="d-flex social-links mb-6">
               <v-btn
                 icon
-                class="mr-4"
-                color="error"
-                href="https://www.youtube.com/channel/UCwPzHYyJy85mEExyrVLF2Hw"
-                target="_blank"
-              >
-                <v-icon>mdi-youtube</v-icon>
-              </v-btn>
-              <v-btn
-                icon
-                class="mr-4"
-                color="pink"
-                href="https://www.instagram.com/chuk1123/"
-                target="_blank"
-              >
-                <v-icon>mdi-instagram</v-icon>
-              </v-btn>
-              <v-btn
-                icon
-                class="mr-4"
-                color="info"
+                variant="text"
+                class="mr-3"
+                color="primary"
                 href="https://www.linkedin.com/in/kevin-chu-072b7a211/"
                 target="_blank"
               >
@@ -74,11 +51,23 @@
               </v-btn>
               <v-btn
                 icon
-                class="mr-4"
+                variant="text"
+                class="mr-3"
+                color="primary"
                 href="https://github.com/chuk1123"
                 target="_blank"
               >
                 <v-icon>mdi-github</v-icon>
+              </v-btn>
+              <v-btn
+                icon
+                variant="text"
+                class="mr-3"
+                color="primary"
+                href="https://www.instagram.com/chuk1123/"
+                target="_blank"
+              >
+                <v-icon>mdi-instagram</v-icon>
               </v-btn>
             </div>
           </v-col>
@@ -86,11 +75,11 @@
           <v-col cols="12" md="6" class="d-flex justify-center fade-in delay-2">
             <div class="profile-img-container">
               <v-img
-                height="400"
-                width="400"
-                cover
+                height="350"
+                width="350"
+                contain
                 eager
-                src="/Kevin Berkeley.jpeg"
+                src="/Kevin Sophomore.png"
                 alt="Kevin Chu profile photo"
               />
             </div>
@@ -102,7 +91,7 @@
     <!-- About Me Section -->
     <section class="py-8">
       <v-container>
-        <h2 class="text-h3 text-primary text-center font-weight-bold mb-6 fade-in">
+        <h2 class="text-h3 text-primary font-weight-bold mb-6 fade-in">
           About Me
         </h2>
         
@@ -147,18 +136,18 @@
     <!-- Projects Section -->
     <section id="projects" class="py-8">
       <v-container>
-        <h2 class="text-h3 text-primary text-center font-weight-bold mb-6 fade-in">
-          My Projects
+        <h2 class="text-h3 text-primary font-weight-bold mb-6 fade-in">
+          Research & Projects
         </h2>
         
         <v-row class="fade-in delay-1">
           <v-col v-for="(project, index) in projects" :key="index" cols="12" md="6" class="mb-8">
-            <v-card class="card-hover project-card rounded-xl" height="100%">
-              <div class="d-flex flex-nowrap rounded-t-xl overflow-hidden" style="height: 250px">
+            <v-card class="card-hover project-card" height="100%">
+              <div class="d-flex flex-nowrap overflow-hidden" style="height: 200px">
                 <div v-for="(img, i) in project.image" :key="i" class="flex-grow-1 position-relative">
                   <v-img
                     :src="img"
-                    height="250"
+                    height="200"
                     cover
                     eager
                     :alt="`${project.title} image ${i+1}`"
@@ -187,29 +176,16 @@
                 </p>
               </v-card-text>
               
-              <v-card-actions class="pa-4 pt-0 d-flex justify-center">
+              <v-card-actions class="pa-4 pt-0">
                 <v-btn
-                  variant="elevated"
+                  variant="text"
                   color="primary"
-                  class="rounded-xl px-6 py-2 mx-2"
                   :href="project.link"
                   target="_blank"
-                  elevation="2"
+                  size="small"
                 >
-                  <v-icon start class="mr-2">mdi-github</v-icon>
+                  <v-icon start>mdi-github</v-icon>
                   View Code
-                </v-btn>
-                
-                <v-btn
-                  v-if="project.demo"
-                  variant="outlined"
-                  color="primary"
-                  class="rounded-xl px-6 py-2 mx-2"
-                  :href="project.demo"
-                  target="_blank"
-                >
-                  <v-icon start class="mr-2">mdi-web</v-icon>
-                  Live Demo
                 </v-btn>
               </v-card-actions>
             </v-card>
@@ -221,20 +197,17 @@
     <!-- Call To Action -->
     <section class="py-8">
       <v-container>
-        <v-row class="justify-center fade-in">
-          <v-col cols="12" md="8" class="text-center">
-            <h2 class="text-h3 font-weight-bold mb-4">Interested in working together?</h2>
+        <v-row class="fade-in">
+          <v-col cols="12" md="8">
+            <h2 class="text-h3 font-weight-bold mb-4">Interested in Collaboration?</h2>
             <p class="text-body-1 mb-6">
-              I'm always open to new opportunities and collaborations.
-              Feel free to reach out if you'd like to connect!
+              I'm actively seeking research opportunities and academic collaborations.
+              Whether you're looking for a dedicated research assistant or want to discuss potential projects in computer science and data science, I'd love to connect!
             </p>
             <v-btn
-              size="large"
               color="primary"
-              variant="elevated"
-              rounded="xl"
-              href="mailto:kevin.chu@berkeley.edu"
-              class="px-6"
+              variant="outlined"
+              href="mailto:chuk1123@berkeley.edu"
             >
               <v-icon start>mdi-email</v-icon>
               Contact Me
@@ -254,18 +227,20 @@ useHead({
 
 // Bio text
 const bio = `
-  I am currently a freshman at UC Berkeley studying CS and DS. I am interested in computer science and code in Python, C++, Java, and Javascript.
-  I have experience in machine learning, discord bots, web development, and competitive programming.
-  In my free time, I also enjoy producing electronic music, solving Rubik's Cubes and playing tennis.
+  I am a sophomore at UC Berkeley pursuing dual degrees in Computer Science and Data Science, with a strong academic record across core courses including Data Structures & Algorithms, Discrete Mathematics, and Principles of Data Science.
+  
+  My research interests lie in machine learning, algorithmic optimization, and computational methods for data analysis. I have hands-on experience with Python, C++, Java, and JavaScript, applying these skills to projects in artificial intelligence, competitive programming, and data science applications.
+  
+  I am actively seeking research opportunities to contribute to academic projects and further develop my expertise in computational sciences.
 `
 
 // Enhanced project data
 const projects = [
   {
-    title: "Discord Stock Bot",
-    subtitle: "Discord Bot to Receive Real-Time Processed Data",
-    description: "A custom Discord bot that provides real-time stock data, charts, and analysis. Users can request stock information directly in Discord channels.",
-    technologies: ["Python", "Pycord", "Financial APIs", "Data Visualization"],
+    title: "Financial Data Analysis Bot",
+    subtitle: "Automated Financial Data Processing & Visualization",
+    description: "A Python-based system for real-time financial data retrieval, processing, and visualization. Implements efficient data structures for time-series analysis and provides statistical insights through Discord integration. Demonstrates proficiency in API integration, data analysis, and user interface design.",
+    technologies: ["Python", "Data Analysis", "APIs", "Statistical Visualization"],
     image: [
       "/Stock_Bot_QQQ_Example.jpeg",
       "/stock-bot.png",
@@ -274,9 +249,9 @@ const projects = [
     demo: null,
   },
   {
-    title: "Snake AI",
-    subtitle: "AI to Play Snake Using Deep Reinforcement Learning",
-    description: "A neural network trained using reinforcement learning to play the classic Snake game. The AI learns optimal strategies through repeated gameplay.",
+    title: "Reinforcement Learning Snake AI",
+    subtitle: "Deep Q-Network Game Agent",
+    description: "An intelligent agent that learns to play the classic Snake game using Deep Q-Learning algorithms. Implements neural networks with experience replay and target networks to achieve optimal gameplay strategies. Demonstrates practical application of reinforcement learning techniques in game environments.",
     technologies: ["Python", "PyTorch", "Deep Q-Learning", "Neural Networks"],
     image: [
       "/Snake.png",

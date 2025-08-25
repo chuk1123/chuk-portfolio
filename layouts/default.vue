@@ -39,7 +39,7 @@
               rounded="xl"
               class="ml-4" 
               variant="elevated"
-              href="/Kevin Chu Resume 2025.pdf"
+              href="/Kevin Chu Resume August 2025.pdf"
               download
             >
               <v-icon class="mr-2">mdi-file-download</v-icon>
@@ -82,7 +82,7 @@
               block
               color="primary"
               variant="elevated"
-              href="/Kevin Chu Resume 2025.pdf"
+              href="/Kevin Chu Resume August 2025.pdf"
               download
               class="py-3"
             >
