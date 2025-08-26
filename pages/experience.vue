@@ -195,32 +195,25 @@ const professionalExperience = [
 // Academic Achievements
 const academicAchievements = [
   {
-    title: "4.0 GPA",
-    context: "UC Berkeley CS & DS Double Major",
-    description: "Perfect academic performance across challenging coursework including Data Structures & Algorithms, Discrete Mathematics, Principles of Data Science, and advanced mathematics courses.",
-    metric: "Perfect GPA",
+    title: "UC Berkeley",
+    context: "Computer Science & Data Science",
+    description: "4.0 GPA • Coursework: CS 61A/61B (A), CS 70 (A), Data 100 (A+), Math 53/56 (A+)",
+    metric: "4.0 GPA",
     icon: "mdi-school"
   },
   {
-    title: "USACO Gold Division",
+    title: "USACO Gold",
     context: "Competitive Programming",
-    description: "Achieved Gold level in USA Computing Olympiad in December 2022, placing in top ~10% of participants nationally. Demonstrates advanced algorithmic problem-solving skills.",
-    metric: "Top 10% nationally",
+    description: "Achieved Gold Division in USA Computing Olympiad (December 2022)",
+    metric: "Gold Level",
     icon: "mdi-trophy"
   },
   {
-    title: "High School Excellence",
-    context: "Northwood High School",
-    description: "Graduated with 4.43/4.0 weighted GPA and 4.0/4.0 unweighted GPA. Completed 9 AP courses including CS A, CS Principles, and STEM subjects.",
-    metric: "Valedictorian Level",
+    title: "Northwood High School",
+    context: "High School Graduate",
+    description: "4.43/4.0 weighted GPA, 4.0/4.0 unweighted • 9 AP courses",
+    metric: "4.43 GPA",
     icon: "mdi-star"
-  },
-  {
-    title: "Research Experience",
-    context: "UCSF, BAIR, UCI COSMOS",
-    description: "Active researcher at top institutions focusing on medical AI, LLM reasoning, and biomedical data science. Contributing to cutting-edge projects in healthcare AI.",
-    metric: "3 research positions",
-    icon: "mdi-brain"
   }
 ]
 
