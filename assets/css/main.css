@@ -62,6 +62,7 @@ body {
 .delay-3,
 .delay-4 {
     /* animation delays disabled */
+    animation-delay: 0s;
 }
 
 /* Cards */
@@ -139,6 +140,15 @@ body {
     background-color: rgba(103, 58, 183, 0.1);
     border-radius: 20px;
     font-size: 0.8rem;
+    color: var(--primary);
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: rgba(103, 58, 183, 0.1);
+    border-radius: 12px;
+    font-size: 0.75rem;
     color: var(--primary);
 }
 

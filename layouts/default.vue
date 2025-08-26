@@ -15,7 +15,7 @@
             to="/"
             class="font-weight-bold text-h4 text-primary text-decoration-none"
           >
-            Chuk
+            Kevin Chu
           </NuxtLink>
           <v-spacer />
           
@@ -105,7 +105,7 @@
         <v-container class="py-8" style="max-width: 1280px">
           <v-row>
             <v-col cols="12" md="4">
-              <div class="text-h5 font-weight-bold text-primary mb-6">Chuk</div>
+              <div class="text-h5 font-weight-bold text-primary mb-6">Kevin Chu</div>
               <p class="text-body-1">
                 Computer Science & Data Science Student at UC Berkeley.
                 Passionate about Machine Learning, Web Development, and Discord Bots.
@@ -170,6 +170,10 @@ const navigationItems = [
   {
     title: "Home",
     to: "/",
+  },
+  {
+    title: "Experience",
+    to: "/experience",
   },
   {
     title: "About",

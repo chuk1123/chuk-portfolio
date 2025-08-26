@@ -1,9 +1,9 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="py-16">
+    <section class="py-8">
       <v-container>
-        <h1 class="text-h2 text-primary text-center font-weight-bold mb-10 fade-in">
+        <h1 class="text-h3 text-primary font-weight-bold mb-6 fade-in">
           About Me
         </h1>
         
@@ -71,17 +71,17 @@
     </section>
     
     <!-- Experience Section -->
-    <section class="py-16">
+    <section class="py-8">
       <v-container>
-        <h2 class="text-h3 text-primary text-center font-weight-bold mb-10 fade-in">
+        <h2 class="text-h3 text-primary font-weight-bold mb-6 fade-in">
           Experience
         </h2>
         
         <v-row class="fade-in delay-1">
           <v-col cols="12">
             <v-row>
-              <v-col v-for="(exp, index) in experience" :key="index" cols="12" sm="6" md="4" class="mb-6">
-                <v-card class="pa-6 rounded-xl card-hover" elevation="3" height="100%">
+              <v-col v-for="(exp, index) in experience" :key="index" cols="12" sm="6" md="4" class="mb-8">
+                <v-card class="pa-6 rounded-xl card-hover" height="100%">
                   <v-card-title class="text-h6 font-weight-bold">
                     {{ exp }}
                   </v-card-title>
@@ -94,9 +94,9 @@
     </section>
     
     <!-- Education Timeline -->
-    <section class="py-16">
+    <section class="py-8">
       <v-container>
-        <h2 class="text-h3 text-primary text-center font-weight-bold mb-10 fade-in">
+        <h2 class="text-h3 text-primary font-weight-bold mb-6 fade-in">
           Education
         </h2>
         
@@ -105,8 +105,8 @@
         </div>
         
         <v-row class="fade-in delay-1 mb-16">
-          <v-col v-for="(course, index) in sortedCoursework" :key="index" cols="12" sm="6" md="4" class="mb-6">
-            <v-card class="pa-4 rounded-xl card-hover" elevation="3" height="100%">
+          <v-col v-for="(course, index) in sortedCoursework" :key="index" cols="12" sm="6" md="4" class="mb-8">
+            <v-card class="pa-4 rounded-xl card-hover" height="100%">
               <v-card-title class="text-h6 font-weight-bold d-flex align-center">
                 {{ course.title }}
                 <v-spacer></v-spacer>
@@ -124,8 +124,8 @@
         </div>
         
         <v-row class="fade-in delay-1">
-          <v-col v-for="(c, index) in classes" :key="index" cols="12" md="4" class="mb-6">
-            <v-card class="pa-6 rounded-xl card-hover" elevation="3" height="100%">
+          <v-col v-for="(c, index) in classes" :key="index" cols="12" md="4" class="mb-8">
+            <v-card class="pa-6 rounded-xl card-hover" height="100%">
               <v-card-title class="text-h6 font-weight-bold mb-3">
                 {{ c.title }}
               </v-card-title>
@@ -139,60 +139,53 @@
     </section>
     
     <!-- Achievements -->
-    <section class="py-16">
+    <section class="py-8">
       <v-container>
-        <v-row>
-          <v-col cols="12">
-            <h2 class="text-h3 text-primary text-center font-weight-bold mb-10 fade-in">
-              Achievements
-            </h2>
+        <h2 class="text-h3 text-primary font-weight-bold mb-6 fade-in">
+          Achievements
+        </h2>
             
-            <v-row class="fade-in delay-1">
-              <v-col v-for="(achievement, index) in achievements" :key="index" cols="12" md="6" class="mb-6">
-                <v-card class="pa-6 rounded-xl card-hover d-flex" elevation="3">
-                  <v-icon color="primary" size="32" class="mr-6">mdi-trophy</v-icon>
-                  <div class="text-h6 font-weight-medium text-wrap">{{ achievement }}</div>
-                </v-card>
-              </v-col>
-            </v-row>
+        <v-row>
+          <v-col v-for="(achievement, index) in achievements" :key="index" cols="12" md="6" class="mb-6">
+            <v-card class="pa-4 rounded-xl card-hover" height="100%">
+              <div class="d-flex align-center">
+                <v-icon color="primary" size="24" class="mr-3">mdi-trophy</v-icon>
+                <div class="text-body-2">{{ achievement }}</div>
+              </div>
+            </v-card>
           </v-col>
         </v-row>
       </v-container>
     </section>
     
     <!-- Contact CTA -->
-    <section class="py-16">
+    <section class="py-8">
       <v-container>
         <v-row class="justify-center fade-in">
           <v-col cols="12" md="8" class="text-center">
-            <h2 class="text-h3 font-weight-bold mb-6">Ready to Connect?</h2>
-            <p class="text-body-1 mb-10">
-              I'm always excited to discuss new opportunities, innovative projects, or simply chat about technology. 
-              Download my resume to learn more about my experience, or reach out directly!
+            <h2 class="text-h3 font-weight-bold mb-4">Let's Connect!</h2>
+            <p class="text-body-1 mb-6">
+              Interested in research collaboration or discussing opportunities? Feel free to reach out.
             </p>
             <div class="d-flex flex-wrap justify-center">
               <v-btn
-                size="large"
-                color="primary"
-                variant="elevated"
-                rounded="xl"
-                href="/Kevin Chu Resume August 2025.pdf"
-                download
-                class="px-8 py-3 mx-4 mb-4"
-              >
-                <v-icon start>mdi-file-download</v-icon>
-                Download Resume
-              </v-btn>
-              <v-btn
-                size="large"
                 color="primary"
                 variant="outlined"
-                rounded="xl"
+                href="/Kevin Chu Resume August 2025.pdf"
+                download
+                class="mr-3 mb-2"
+              >
+                <v-icon start>mdi-file-download</v-icon>
+                Resume
+              </v-btn>
+              <v-btn
+                color="primary"
+                variant="text"
                 href="mailto:chuk1123@berkeley.edu"
-                class="px-8 py-3 mx-4 mb-4"
+                class="mr-3 mb-2"
               >
                 <v-icon start>mdi-email</v-icon>
-                Contact Me
+                Email
               </v-btn>
             </div>
           </v-col>

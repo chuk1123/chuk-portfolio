@@ -12,21 +12,31 @@
               Kevin Chu
             </h1>
             <h2 class="hero-subtitle font-weight-medium mb-6">
-              Sophomore in Computer Science & Data Science, UC Berkeley
+              Sophomore CS & DS Student at UC Berkeley
             </h2>
             <p class="text-body-1 mb-6">
-              Focused on Machine Learning Research, Algorithmic Problem Solving, and Data Science Applications.<br>
-              Seeking research opportunities in AI and computational methods for real-world problems.
+              Passionate about developing AI systems for healthcare applications, with particular interest in diagnostic algorithms, personalized medicine, and interpretable machine learning models.<br>
+              Seeking research opportunities to contribute to computational health solutions that can improve patient outcomes and clinical decision-making.
             </p>
             
             <div class="d-flex flex-wrap mb-6">
               <v-btn
                 class="mr-4 mb-3"
-                variant="outlined"
+                variant="elevated"
                 color="primary"
                 href="#projects"
               >
+                <v-icon start>mdi-folder-open</v-icon>
                 Projects
+              </v-btn>
+              <v-btn
+                class="mr-4 mb-3"
+                variant="outlined"
+                color="primary"
+                to="/experience"
+              >
+                <v-icon start>mdi-briefcase</v-icon>
+                Experience
               </v-btn>
               <v-btn
                 class="mr-4 mb-3"
@@ -34,6 +44,7 @@
                 color="primary"
                 to="/about"
               >
+                <v-icon start>mdi-account</v-icon>
                 About
               </v-btn>
             </div>
@@ -137,17 +148,17 @@
     <section id="projects" class="py-8">
       <v-container>
         <h2 class="text-h3 text-primary font-weight-bold mb-6 fade-in">
-          Research & Projects
+          Projects
         </h2>
         
         <v-row class="fade-in delay-1">
           <v-col v-for="(project, index) in projects" :key="index" cols="12" md="6" class="mb-8">
-            <v-card class="card-hover project-card" height="100%">
-              <div class="d-flex flex-nowrap overflow-hidden" style="height: 200px">
+            <v-card class="card-hover project-card rounded-xl" height="100%">
+              <div class="d-flex flex-nowrap rounded-t-xl overflow-hidden" style="height: 250px">
                 <div v-for="(img, i) in project.image" :key="i" class="flex-grow-1 position-relative">
                   <v-img
                     :src="img"
-                    height="200"
+                    height="250"
                     cover
                     eager
                     :alt="`${project.title} image ${i+1}`"
@@ -176,7 +187,7 @@
                 </p>
               </v-card-text>
               
-              <v-card-actions class="pa-4 pt-0">
+              <!-- <v-card-actions class="pa-4 pt-0">
                 <v-btn
                   variant="text"
                   color="primary"
@@ -187,7 +198,7 @@
                   <v-icon start>mdi-github</v-icon>
                   View Code
                 </v-btn>
-              </v-card-actions>
+              </v-card-actions> -->
             </v-card>
           </v-col>
         </v-row>
@@ -197,8 +208,8 @@
     <!-- Call To Action -->
     <section class="py-8">
       <v-container>
-        <v-row class="fade-in">
-          <v-col cols="12" md="8">
+        <v-row class="justify-center fade-in">
+          <v-col cols="12" md="8" class="text-center">
             <h2 class="text-h3 font-weight-bold mb-4">Interested in Collaboration?</h2>
             <p class="text-body-1 mb-6">
               I'm actively seeking research opportunities and academic collaborations.
@@ -234,13 +245,13 @@ const bio = `
   I am actively seeking research opportunities to contribute to academic projects and further develop my expertise in computational sciences.
 `
 
-// Enhanced project data
+// Project data
 const projects = [
   {
-    title: "Financial Data Analysis Bot",
-    subtitle: "Automated Financial Data Processing & Visualization",
-    description: "A Python-based system for real-time financial data retrieval, processing, and visualization. Implements efficient data structures for time-series analysis and provides statistical insights through Discord integration. Demonstrates proficiency in API integration, data analysis, and user interface design.",
-    technologies: ["Python", "Data Analysis", "APIs", "Statistical Visualization"],
+    title: "Discord Stock Bot",
+    subtitle: "Real-Time Financial Data & Analytics",
+    description: "A Discord bot that provides real-time stock data, charts, and analysis. Built with Python, integrating financial APIs for data retrieval and processing. Features include technical indicators, price alerts, and interactive charts for users.",
+    technologies: ["Python", "Financial APIs", "Data Visualization", "Discord.py"],
     image: [
       "/Stock_Bot_QQQ_Example.jpeg",
       "/stock-bot.png",
@@ -249,9 +260,9 @@ const projects = [
     demo: null,
   },
   {
-    title: "Reinforcement Learning Snake AI",
-    subtitle: "Deep Q-Network Game Agent",
-    description: "An intelligent agent that learns to play the classic Snake game using Deep Q-Learning algorithms. Implements neural networks with experience replay and target networks to achieve optimal gameplay strategies. Demonstrates practical application of reinforcement learning techniques in game environments.",
+    title: "Snake AI",
+    subtitle: "Reinforcement Learning Game Agent",
+    description: "An AI agent that learns to play Snake using Deep Q-Learning. Implemented neural networks with experience replay and target networks to achieve high performance. Demonstrates reinforcement learning concepts and neural network optimization.",
     technologies: ["Python", "PyTorch", "Deep Q-Learning", "Neural Networks"],
     image: [
       "/Snake.png",

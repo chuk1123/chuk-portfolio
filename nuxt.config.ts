@@ -9,8 +9,8 @@ export default defineNuxtConfig({
     // App configuration (replaces head section in Nuxt 2)
     app: {
         head: {
-            titleTemplate: '%s - Chuk',
-            title: 'Chuk',
+            titleTemplate: '%s - Kevin Chu',
+            title: 'Kevin Chu',
             htmlAttrs: {
                 lang: 'en'
             },
